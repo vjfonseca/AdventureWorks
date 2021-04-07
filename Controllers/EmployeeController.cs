@@ -25,4 +25,9 @@ public class EmployeeController : ControllerBase
         var a = _repo.GenderByCountry();
         return a;
     }
+    public ActionResult<object> AllGenderByCountryRelative()
+    {
+        var data = _repo.GenderByCountryRelative();
+        return data;
+    }
 }

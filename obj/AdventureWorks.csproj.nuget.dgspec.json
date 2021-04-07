@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\arquivos\\estudo\\projetos\\AdventureWorks\\AdventureWorks.csproj",
         "projectName": "AdventureWorks",
         "projectPath": "C:\\arquivos\\estudo\\projetos\\AdventureWorks\\AdventureWorks.csproj",
-        "packagesPath": "C:\\Users\\victorr\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
         "outputPath": "C:\\arquivos\\estudo\\projetos\\AdventureWorks\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\victorr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

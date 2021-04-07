@@ -8,6 +8,6 @@ namespace AdventureWorks.Data
         public Employee Get (int BusinessEntityID);
         public int TotalByGender(char gender);
         public object GenderByCountry();
-        public object GenderByCountryRelative(char gender);
+        public object GenderByCountryRelative();
     }
 }

@@ -10,7 +10,7 @@ namespace AdventureWorks.Data
 {
     public class DapperEmployeeRepo : IEmployeeRepo
     {
-        private string CONN_STRING = "Server=(localdb)\\mssqllocaldb;Database=AdventureWorks2016;Trusted_Connection=True";
+        private string CONN_STRING = "Server=DESKTOP-0PG4D5T\\SQLEXPRESS;Database=AdventureWorks2016;Trusted_Connection=True;User Id=sa;Password=sa";
 
         public Employee Get(int BusinessEntityID)
         {
@@ -49,18 +49,12 @@ namespace AdventureWorks.Data
                 return data;
             }
         }
-
-        public object GenderByCountryRelative(char gender)
+        public object GenderByCountryRelative()
         {
             using(var connection = new SqlConnection(CONN_STRING))
             {
                 var sql = EmployeeSQL.GenderByCountryRelative();
-
-                var dynPara = new DynamicParameters();
-                gender = char.ToUpper(gender);
-                dynPara.Add("Gender", gender);
-                
-                var data = connection.Query(sql, dynPara);
+                var data = connection.Query(sql);
                 return data;
             }
         }

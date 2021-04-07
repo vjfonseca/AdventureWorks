@@ -30,6 +30,7 @@ namespace AdventureWorks.Data.SQLServerQuerys
         }
         public static string GenderByCountryRelative()
         {
+            
             return @"SELECT CountryRegionCode, GENDER, TOTAL_BY_GENDER, FORMAT(TOTAL_BY_GENDER*1.0 / TOTAL * 1.0, 'P2') AS 'RELATIVE'
                     FROM
                     (SELECT TOP 10 COUNT(*) AS TOTAL, CountryRegionCode AS CR
@@ -47,8 +48,8 @@ namespace AdventureWorks.Data.SQLServerQuerys
                     GROUP BY  S2.CountryRegionCode, E2.Gender
                     ORDER BY CountryRegionCode DESC) AS BYGENDER
                     ON T.CR = BYGENDER.CountryRegionCode
-                    where gender = @gender
                     order by 'RELATIVE'";
+            // where gender = @gender
         }
     }
 }
