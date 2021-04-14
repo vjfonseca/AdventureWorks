@@ -4,14 +4,10 @@ namespace AdventureWorks.Data.SQLServerQuerys
     {
         public static string Get()
         {
-            return @"SELECT * 
-                     FROM
-                        (SELECT PER.BusinessEntityID, FirstName, LastName
-                        FROM PERSON.Person AS PER	                 
-                        WHERE PER.BusinessEntityID = @BusinessEntityID) AS P, 
-                        (SELECT EMP.JobTitle, EMP.Gender
-                        FROM HumanResources.Employee AS EMP                 
-                        WHERE EMP.BusinessEntityID = @BusinessEntityID) AS e";
+            return @"SELECT PER.BusinessEntityID, PER.FirstName, PER.LastName, EMP.Gender, EMP.JobTitle
+                     FROM PERSON.Person AS PER
+			            inner join HumanResources.Employee as emp 
+				            on emp.BusinessEntityID = PER.BusinessEntityID";
         }
 
         public static string TotalByGender()

@@ -12,16 +12,13 @@ namespace AdventureWorks.Data
     {
         private string CONN_STRING = "Server=DESKTOP-0PG4D5T\\SQLEXPRESS;Database=AdventureWorks2016;Trusted_Connection=True;User Id=sa;Password=sa";
 
-        public Employee Get(int BusinessEntityID)
+        public IEnumerable<Employee> GetAll()
         {
             using (var connection = new SqlConnection(CONN_STRING))
             {
                 var sql = EmployeeSQL.Get();
                 
-                var dynPara = new DynamicParameters();
-                dynPara.Add("BusinessEntityID", BusinessEntityID);
-
-                Employee emp = connection.QueryFirstOrDefault<Employee>(sql, dynPara);
+                var emp = connection.QueryMultiple(sql).Read<Employee>().AsList<Employee>();
                 return emp;
             }
         }

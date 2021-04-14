@@ -10,11 +10,11 @@ public class EmployeeController : ControllerBase
     {
         _repo = repo;
     }
-    public ActionResult<Employee> Get(int BusinessEntityID)
+    public ActionResult<IEnumerable<Employee>> GetAll()
     {
-        var e = _repo.Get(BusinessEntityID);
+        var e = _repo.GetAll();
         if (e == null) return StatusCode(500);
-        return e;
+        return Ok(e);
     }
     public ActionResult<int> TotalByGender(char gender)
     {
