@@ -13,13 +13,6 @@ public class PersonController : ControllerBase
     }
     public ActionResult<Person> Get(int id)
     {
-        try
-        {
-            return Ok(_repo.Get(id));
-        }
-        catch (Exception ex)
-        {
-            return StatusCode(500, new { ex.Message });
-        }
+        return Ok(_repo.Get(id));
     }
 }

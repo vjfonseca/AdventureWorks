@@ -18,8 +18,7 @@ namespace AdventureWorks
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddScoped<IPersonRepo, DapperPersonRepo>();
-            services.AddScoped<IEmployeeRepo, DapperEmployeeRepo>();
+            services.AddScoped<IEmployeeRepo, DapperEmployeeRepoSP>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

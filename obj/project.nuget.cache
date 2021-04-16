@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8ertJ4sWShoX0hBLgM26wuse0rw5ZyU4D6PAJPzjP0i45HveJ0k/VLQxZ38LbyHn7s9CCIsClavq5xxRG4ZFfQ==",
+  "dgSpecHash": "Owy++ymFOGghCJvQ8DpHp/UiLYSuONMA53g4zYaRx66xMGps6sEYFStaY/NN1vCfhklbpeUKGTbBJRbvUhFa5Q==",
   "success": true,
-  "projectFilePath": "C:\\arquivos\\estudo\\projetos\\AdventureWorks\\app\\AdventureWorks.csproj",
+  "projectFilePath": "C:\\arquivos\\estudo\\projetos\\AdventureWorks\\AdventureWorks\\AdventureWorks.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\victo\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

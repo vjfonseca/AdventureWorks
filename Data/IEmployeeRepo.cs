@@ -8,7 +8,7 @@ namespace AdventureWorks.Data
     {
         public IEnumerable<Employee> GetAll();
         public int TotalByGender(char gender);
-        public object GenderByCountry();
-        public object GenderByCountryRelative();
+        public IEnumerable<object> GenderByCountry();
+        public IEnumerable<object> GenderByCountryRelative();
     }
 }

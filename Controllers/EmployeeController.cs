@@ -3,6 +3,7 @@ using AdventureWorks.Data;
 using Microsoft.AspNetCore.Mvc;
 
 using System.Data;
+
 public class EmployeeController : ControllerBase
 {
     private readonly IEmployeeRepo _repo;
@@ -18,16 +19,16 @@ public class EmployeeController : ControllerBase
     }
     public ActionResult<int> TotalByGender(char gender)
     {
-        return _repo.TotalByGender(gender);
+        return _repo.TotalByGender(char.ToUpper(gender));
     }
-    public ActionResult<object> AllGenderByCountry()
+    public ActionResult<IEnumerable<object>> AllGenderByCountry()
     {
-        var a = _repo.GenderByCountry();
-        return a;
+        var data = _repo.GenderByCountry();
+        return Ok(data);
     }
-    public ActionResult<object> AllGenderByCountryRelative()
+    public ActionResult<IEnumerable<object>> AllGenderByCountryRelative()
     {
         var data = _repo.GenderByCountryRelative();
-        return data;
+        return Ok(data);
     }
 }
