@@ -11,8 +11,13 @@ public class PersonController : ControllerBase
     {
         this._repo = repo;
     }
-    public ActionResult<Person> Get(int id)
+    public ActionResult<Person> Get(int BusinessEntityID)
     {
-        return Ok(_repo.Get(id));
+        Person p = new Person();
+        for(int i = 0; i< 20000; i++)
+        {
+            p = _repo.Get(i);
+        }
+        return Ok(p);
     }
 }

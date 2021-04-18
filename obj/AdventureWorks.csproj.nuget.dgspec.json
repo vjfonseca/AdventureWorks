@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\arquivos\\estudo\\projetos\\AdventureWorks\\AdventureWorks\\AdventureWorks.csproj": {}
+    "C:\\arquivos\\estudo\\projetos\\AdventureWorks\\adventureworks\\AdventureWorks.csproj": {}
   },
   "projects": {
-    "C:\\arquivos\\estudo\\projetos\\AdventureWorks\\AdventureWorks\\AdventureWorks.csproj": {
+    "C:\\arquivos\\estudo\\projetos\\AdventureWorks\\adventureworks\\AdventureWorks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\arquivos\\estudo\\projetos\\AdventureWorks\\AdventureWorks\\AdventureWorks.csproj",
+        "projectUniqueName": "C:\\arquivos\\estudo\\projetos\\AdventureWorks\\adventureworks\\AdventureWorks.csproj",
         "projectName": "AdventureWorks",
-        "projectPath": "C:\\arquivos\\estudo\\projetos\\AdventureWorks\\AdventureWorks\\AdventureWorks.csproj",
+        "projectPath": "C:\\arquivos\\estudo\\projetos\\AdventureWorks\\adventureworks\\AdventureWorks.csproj",
         "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\arquivos\\estudo\\projetos\\AdventureWorks\\AdventureWorks\\obj\\",
+        "outputPath": "C:\\arquivos\\estudo\\projetos\\AdventureWorks\\adventureworks\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
